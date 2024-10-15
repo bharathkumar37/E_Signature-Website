@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>eSignature Generator</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+            <h1>E Signature</h1>
+            </div>
+        </header>
+        <section>
+            <div class="para">
+                <p>
+                Easily create your digital signature with our online signature pad, accessible on any device, 
+                including iPhone, iPad, Android phones, tablets, and computers.<br>
+                Users can create unique digital signatures.
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="button" type="button" onclick="scrollToSignGen()">Signature Generator</button>
+                <button class="button" type="button" onclick="scrollToDrawASign()">Draw a Signature</button>
+            </div>
+            </div>
+        </section>
+        <section id="sign">
+            <div class="container">
+                <h1>Create Your Custom eSignature</h1>
+                <div class="form-group">
+                    <label for="signatureInput">Type Your Signature Here:</label>
+                    <input type="text" id="signatureInput" placeholder="Your Signature Here">
+                </div>
+                <div class="form-group">
+                    <label for="fontStyle">Choose Font Style:</label>
+                    <select id="fontStyle">
+                        <option value="Dancing Script">Dancing Script</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Courier New">Courier New</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="signatureSize">Choose Signature Size:</label>
+                    <select id="signatureSize">
+                        <option value="30">Small</option>
+                        <option value="50">Medium</option>
+                        <option value="80">Large</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="slopeSignature">Slope Signature:</label>
+                    <select id="slopeSignature">
+                        <option value="0">Straight</option>
+                        <option value="10">Inclined</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="signatureColor">Pick Signature Color:</label>
+                    <input type="color" id="signatureColor" value="#000000">
+                </div>
+                <div class="buttons-sign">
+                    <button type="button" id="createSignature">Create Signature</button>
+                    <button type="button" id="downloadSignature">Download</button>
+                </div>
+                <canvas id="signatureCanvas" width="400" height="200"></canvas>
+            </div>
+        </section>
+        <section id="draw">
+            <div class="container2">
+                <h1>Draw Your Signature</h1>
+                <p>Use the canvas below to draw your signature.</p>
+                <canvas id="signature-pad"></canvas>
+                <div class="options">
+                    <div class="color-option" style="background-color: #000000;" data-color="#000000"></div>
+                    <div class="color-option" style="background-color: #3498db;" data-color="#3498db"></div>
+                    <div class="color-option" style="background-color: #e74c3c;" data-color="#e74c3c"></div>
+                    <div class="color-option" style="background-color: #2ecc71;" data-color="#2ecc71"></div>
+                    <div class="color-option" style="background-color: #f39c12;" data-color="#f39c12"></div>
+                </div>
+                <div class="draw-buttons">
+                    <button type="button" id="clear-btn" class="btn">Clear Signature</button>
+                    <button type="button" id="download-btn" class="btn">Download Signature</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer"> 
+                <p> Copyright &copy; 2024 Bharath Kumar. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="javascript.js"></script>
+    </body>
+</html>

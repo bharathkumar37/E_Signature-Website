@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+
+
+.header {
+    background-color: #0B192C;
+    padding: 5px;
+    text-align: center;
+    h1 {
+        font-size: 250%;
+        color: white;
+    }
+}
+
+.para {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 100px;
+
+    .button {
+        padding: 10px 20px;
+        font-size: 25px;
+        cursor: pointer;
+        width: 400px;
+        height: 60px;
+        background-color: #257180; /* Green background */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #257180; /* Darker green on hover */
+        transform: scale(1.1); /* Slightly enlarge button on hover */
+    }
+}
+
+
+
+
+
+.container {
+    margin: 100px 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 650px;
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+        padding: 25px;
+    }
+}
+
+.form-group {
+    margin-top: 10px;
+}
+        
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group input {
+    width: 636px; 
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group input[type="color"] {
+    width:50%;
+    padding: 0;
+}
+
+.buttons-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    button {
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        background-color: #2ecc71;
+        color: white;
+    }
+    button:hover {
+        background-color: #27ae60;
+    }
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+.container2 {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.5s ease-out;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}  
+
+p {
+    text-align: center;
+}
+
+#signature-pad {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #bdc3c7;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.options {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px #bdc3c7;
+    transition: transform 0.3s ease;
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+}
+
+.draw-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#clear-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#clear-btn:hover {
+    background-color: #c0392b;
+}
+
+#download-btn {
+    background-color: #2ecc71;
+    color: white;
+    margin-left: 1rem;
+}
+
+#download-btn:hover {
+    background-color: #27ae60;
+}
+
+.footer {
+    background-color: black;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
